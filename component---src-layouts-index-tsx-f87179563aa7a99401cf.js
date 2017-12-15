@@ -20,7 +20,7 @@ webpackJsonp([22676092666560,60335399758886],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _index = __webpack_require__(178);
+	var _index = __webpack_require__(179);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -38,12 +38,12 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 243:
+/***/ 244:
 /***/ (function(module, exports, __webpack_require__) {
 
 	var pSlice = Array.prototype.slice;
-	var objectKeys = __webpack_require__(245);
-	var isArguments = __webpack_require__(244);
+	var objectKeys = __webpack_require__(246);
+	var isArguments = __webpack_require__(245);
 	
 	var deepEqual = module.exports = function (actual, expected, opts) {
 	  if (!opts) opts = {};
@@ -139,7 +139,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 244:
+/***/ 245:
 /***/ (function(module, exports) {
 
 	var supportsArgumentsClass = (function(){
@@ -166,7 +166,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 245:
+/***/ 246:
 /***/ (function(module, exports) {
 
 	exports = module.exports = typeof Object.keys === 'function'
@@ -182,7 +182,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 252:
+/***/ 253:
 /***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -229,7 +229,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 363:
+/***/ 364:
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports.__esModule = true;
@@ -247,15 +247,15 @@ webpackJsonp([22676092666560,60335399758886],{
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _reactSideEffect = __webpack_require__(382);
+	var _reactSideEffect = __webpack_require__(383);
 	
 	var _reactSideEffect2 = _interopRequireDefault(_reactSideEffect);
 	
-	var _deepEqual = __webpack_require__(243);
+	var _deepEqual = __webpack_require__(244);
 	
 	var _deepEqual2 = _interopRequireDefault(_deepEqual);
 	
-	var _HelmetUtils = __webpack_require__(364);
+	var _HelmetUtils = __webpack_require__(365);
 	
 	var _HelmetConstants = __webpack_require__(165);
 	
@@ -597,7 +597,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 364:
+/***/ 365:
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {exports.__esModule = true;
@@ -1140,7 +1140,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 382:
+/***/ 383:
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1149,11 +1149,11 @@ webpackJsonp([22676092666560,60335399758886],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _exenv = __webpack_require__(252);
+	var _exenv = __webpack_require__(253);
 	
 	var _exenv2 = _interopRequireDefault(_exenv);
 	
-	var _shallowequal = __webpack_require__(386);
+	var _shallowequal = __webpack_require__(387);
 	
 	var _shallowequal2 = _interopRequireDefault(_shallowequal);
 	
@@ -1264,7 +1264,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 386:
+/***/ 387:
 /***/ (function(module, exports) {
 
 	module.exports = function shallowEqual(objA, objB, compare, compareContext) {
@@ -1338,15 +1338,15 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 178:
+/***/ 179:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const React = __webpack_require__(5);
-	__webpack_require__(296);
-	const react_helmet_1 = __webpack_require__(363);
+	__webpack_require__(297);
+	const react_helmet_1 = __webpack_require__(364);
 	const Spacer_1 = __webpack_require__(60);
 	const Header = () => React.createElement("header", null, React.createElement("div", null, React.createElement(Spacer_1.default, { height: 9 }), React.createElement("h2", null, "Pravdomil"), React.createElement("p", null, "personal site"), React.createElement(Spacer_1.default, { height: 3 }), React.createElement("div", { className: "links" }, React.createElement("a", { href: "mailto:info@pravdomil.com" }, React.createElement("i", { className: "fa fa-envelope" })), React.createElement("a", { href: "https://twitter.com/pravdomil" }, React.createElement("i", { className: "fa fa-twitter" })), React.createElement("a", { href: "https://github.com/pravdomil" }, React.createElement("i", { className: "fa fa-github" })), React.createElement("a", { href: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BCL2X3AFQBAP2&item_name=donation" }, React.createElement("i", { className: "fa fa-paypal" })), React.createElement("a", { href: "https://youtube.com/pravdomil" }, React.createElement("i", { className: "fa fa-youtube-play" })))));
 	const Layout = ({ children }) => React.createElement("main", null, React.createElement(react_helmet_1.Helmet, { title: "Pravdomil.com" }), React.createElement(Header, null), React.createElement("div", null, children()), React.createElement(Footer, null));
@@ -1355,7 +1355,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 296:
+/***/ 297:
 /***/ (function(module, exports) {
 
 	// empty (null-loader)
