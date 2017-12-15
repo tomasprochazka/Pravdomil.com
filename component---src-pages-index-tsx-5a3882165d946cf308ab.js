@@ -119,7 +119,7 @@ webpackJsonp([221374088121123],{
 	const RepoList = function ({ repos }) {
 	    const topics = repos.reduce((accumulator, repo) => {
 	        const topicCount = repo.repositoryTopics.nodes.length;
-	        const name = topicCount ? repo.repositoryTopics.nodes[topicCount - 1].topic.name : "uncategorized";
+	        const name = topicCount ? repo.repositoryTopics.nodes[0].topic.name : "uncategorized";
 	        const topic = getTopic(accumulator, name);
 	        topic.stars += repo.stargazers.totalCount;
 	        if (repo.viewerHasStarred) {
@@ -187,4 +187,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-fa4e643c611ddc1dc621.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-5a3882165d946cf308ab.js.map
