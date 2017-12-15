@@ -1,13 +1,13 @@
 webpackJsonp([22676092666560,60335399758886],{
 
-/***/ 87:
+/***/ 83:
 /***/ (function(module, exports) {
 
 	module.exports = {"layoutContext":{}}
 
 /***/ }),
 
-/***/ 174:
+/***/ 173:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -16,15 +16,15 @@ webpackJsonp([22676092666560,60335399758886],{
 	
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 	
-	var _react = __webpack_require__(4);
+	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _index = __webpack_require__(177);
+	var _index = __webpack_require__(178);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
-	var _layoutIndex = __webpack_require__(87);
+	var _layoutIndex = __webpack_require__(83);
 	
 	var _layoutIndex2 = _interopRequireDefault(_layoutIndex);
 	
@@ -38,179 +38,12 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 182:
-/***/ (function(module, exports, __webpack_require__) {
-
-	module.exports = { "default": __webpack_require__(191), __esModule: true };
-
-/***/ }),
-
-/***/ 184:
-/***/ (function(module, exports, __webpack_require__) {
-
-	module.exports = { "default": __webpack_require__(193), __esModule: true };
-
-/***/ }),
-
-/***/ 188:
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	exports.__esModule = true;
-	
-	var _assign = __webpack_require__(182);
-	
-	var _assign2 = _interopRequireDefault(_assign);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = _assign2.default || function (target) {
-	  for (var i = 1; i < arguments.length; i++) {
-	    var source = arguments[i];
-	
-	    for (var key in source) {
-	      if (Object.prototype.hasOwnProperty.call(source, key)) {
-	        target[key] = source[key];
-	      }
-	    }
-	  }
-	
-	  return target;
-	};
-
-/***/ }),
-
-/***/ 189:
-/***/ (function(module, exports) {
-
-	"use strict";
-	
-	exports.__esModule = true;
-	
-	exports.default = function (obj, keys) {
-	  var target = {};
-	
-	  for (var i in obj) {
-	    if (keys.indexOf(i) >= 0) continue;
-	    if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
-	    target[i] = obj[i];
-	  }
-	
-	  return target;
-	};
-
-/***/ }),
-
-/***/ 191:
-/***/ (function(module, exports, __webpack_require__) {
-
-	__webpack_require__(216);
-	module.exports = __webpack_require__(15).Object.assign;
-
-
-/***/ }),
-
-/***/ 193:
-/***/ (function(module, exports, __webpack_require__) {
-
-	__webpack_require__(218);
-	module.exports = __webpack_require__(15).Object.keys;
-
-
-/***/ }),
-
-/***/ 206:
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-	// 19.1.2.1 Object.assign(target, source, ...)
-	var getKeys = __webpack_require__(37);
-	var gOPS = __webpack_require__(72);
-	var pIE = __webpack_require__(49);
-	var toObject = __webpack_require__(77);
-	var IObject = __webpack_require__(114);
-	var $assign = Object.assign;
-	
-	// should work with symbols and should have deterministic property order (V8 bug)
-	module.exports = !$assign || __webpack_require__(25)(function () {
-	  var A = {};
-	  var B = {};
-	  // eslint-disable-next-line no-undef
-	  var S = Symbol();
-	  var K = 'abcdefghijklmnopqrst';
-	  A[S] = 7;
-	  K.split('').forEach(function (k) { B[k] = k; });
-	  return $assign({}, A)[S] != 7 || Object.keys($assign({}, B)).join('') != K;
-	}) ? function assign(target, source) { // eslint-disable-line no-unused-vars
-	  var T = toObject(target);
-	  var aLen = arguments.length;
-	  var index = 1;
-	  var getSymbols = gOPS.f;
-	  var isEnum = pIE.f;
-	  while (aLen > index) {
-	    var S = IObject(arguments[index++]);
-	    var keys = getSymbols ? getKeys(S).concat(getSymbols(S)) : getKeys(S);
-	    var length = keys.length;
-	    var j = 0;
-	    var key;
-	    while (length > j) if (isEnum.call(S, key = keys[j++])) T[key] = S[key];
-	  } return T;
-	} : $assign;
-
-
-/***/ }),
-
-/***/ 210:
-/***/ (function(module, exports, __webpack_require__) {
-
-	// most Object methods by ES6 should accept primitives
-	var $export = __webpack_require__(24);
-	var core = __webpack_require__(15);
-	var fails = __webpack_require__(25);
-	module.exports = function (KEY, exec) {
-	  var fn = (core.Object || {})[KEY] || Object[KEY];
-	  var exp = {};
-	  exp[KEY] = exec(fn);
-	  $export($export.S + $export.F * fails(function () { fn(1); }), 'Object', exp);
-	};
-
-
-/***/ }),
-
-/***/ 216:
-/***/ (function(module, exports, __webpack_require__) {
-
-	// 19.1.3.1 Object.assign(target, source)
-	var $export = __webpack_require__(24);
-	
-	$export($export.S + $export.F, 'Object', { assign: __webpack_require__(206) });
-
-
-/***/ }),
-
-/***/ 218:
-/***/ (function(module, exports, __webpack_require__) {
-
-	// 19.1.2.14 Object.keys(O)
-	var toObject = __webpack_require__(77);
-	var $keys = __webpack_require__(37);
-	
-	__webpack_require__(210)('keys', function () {
-	  return function keys(it) {
-	    return $keys(toObject(it));
-	  };
-	});
-
-
-/***/ }),
-
-/***/ 251:
+/***/ 243:
 /***/ (function(module, exports, __webpack_require__) {
 
 	var pSlice = Array.prototype.slice;
-	var objectKeys = __webpack_require__(253);
-	var isArguments = __webpack_require__(252);
+	var objectKeys = __webpack_require__(245);
+	var isArguments = __webpack_require__(244);
 	
 	var deepEqual = module.exports = function (actual, expected, opts) {
 	  if (!opts) opts = {};
@@ -306,7 +139,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 252:
+/***/ 244:
 /***/ (function(module, exports) {
 
 	var supportsArgumentsClass = (function(){
@@ -333,7 +166,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 253:
+/***/ 245:
 /***/ (function(module, exports) {
 
 	exports = module.exports = typeof Object.keys === 'function'
@@ -349,7 +182,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 260:
+/***/ 252:
 /***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -396,225 +229,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 274:
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	exports.__esModule = true;
-	exports.navigateTo = undefined;
-	
-	var _extends2 = __webpack_require__(188);
-	
-	var _extends3 = _interopRequireDefault(_extends2);
-	
-	var _keys = __webpack_require__(184);
-	
-	var _keys2 = _interopRequireDefault(_keys);
-	
-	var _objectWithoutProperties2 = __webpack_require__(189);
-	
-	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
-	
-	var _classCallCheck2 = __webpack_require__(48);
-	
-	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-	
-	var _possibleConstructorReturn2 = __webpack_require__(66);
-	
-	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-	
-	var _inherits2 = __webpack_require__(65);
-	
-	var _inherits3 = _interopRequireDefault(_inherits2);
-	
-	exports.withPrefix = withPrefix;
-	
-	var _react = __webpack_require__(4);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRouterDom = __webpack_require__(63);
-	
-	var _propTypes = __webpack_require__(7);
-	
-	var _propTypes2 = _interopRequireDefault(_propTypes);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var pathPrefix = "/"; /*global __PREFIX_PATHS__, __PATH_PREFIX__ */
-	
-	if (false) {
-	  pathPrefix = __PATH_PREFIX__;
-	}
-	
-	function withPrefix(path) {
-	  return normalizePath(pathPrefix + path);
-	}
-	
-	function normalizePath(path) {
-	  return path.replace(/^\/\//g, "/");
-	}
-	
-	var NavLinkPropTypes = {
-	  activeClassName: _propTypes2.default.string,
-	  activeStyle: _propTypes2.default.object,
-	  exact: _propTypes2.default.bool,
-	  strict: _propTypes2.default.bool,
-	  isActive: _propTypes2.default.func,
-	  location: _propTypes2.default.object
-	
-	  // Set up IntersectionObserver
-	};var handleIntersection = function handleIntersection(el, cb) {
-	  var io = new window.IntersectionObserver(function (entries) {
-	    entries.forEach(function (entry) {
-	      if (el === entry.target) {
-	        // Check if element is within viewport, remove listener, destroy observer, and run link callback.
-	        // MSEdge doesn't currently support isIntersecting, so also test for  an intersectionRatio > 0
-	        if (entry.isIntersecting || entry.intersectionRatio > 0) {
-	          io.unobserve(el);
-	          io.disconnect();
-	          cb();
-	        }
-	      }
-	    });
-	  });
-	  // Add element to the observer
-	  io.observe(el);
-	};
-	
-	var GatsbyLink = function (_React$Component) {
-	  (0, _inherits3.default)(GatsbyLink, _React$Component);
-	
-	  function GatsbyLink(props) {
-	    (0, _classCallCheck3.default)(this, GatsbyLink);
-	
-	    // Default to no support for IntersectionObserver
-	    var _this = (0, _possibleConstructorReturn3.default)(this, _React$Component.call(this));
-	
-	    var IOSupported = false;
-	    if (typeof window !== "undefined" && window.IntersectionObserver) {
-	      IOSupported = true;
-	    }
-	
-	    _this.state = {
-	      to: withPrefix(props.to),
-	      IOSupported: IOSupported
-	    };
-	    _this.handleRef = _this.handleRef.bind(_this);
-	    return _this;
-	  }
-	
-	  GatsbyLink.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
-	    if (this.props.to !== nextProps.to) {
-	      this.setState({
-	        to: withPrefix(nextProps.to)
-	      });
-	      // Preserve non IO functionality if no support
-	      if (!this.state.IOSupported) {
-	        ___loader.enqueue(this.state.to);
-	      }
-	    }
-	  };
-	
-	  GatsbyLink.prototype.componentDidMount = function componentDidMount() {
-	    // Preserve non IO functionality if no support
-	    if (!this.state.IOSupported) {
-	      ___loader.enqueue(this.state.to);
-	    }
-	  };
-	
-	  GatsbyLink.prototype.handleRef = function handleRef(ref) {
-	    var _this2 = this;
-	
-	    this.props.innerRef && this.props.innerRef(ref);
-	
-	    if (this.state.IOSupported && ref) {
-	      // If IO supported and element reference found, setup Observer functionality
-	      handleIntersection(ref, function () {
-	        ___loader.enqueue(_this2.state.to);
-	      });
-	    }
-	  };
-	
-	  GatsbyLink.prototype.render = function render() {
-	    var _this3 = this;
-	
-	    var _props = this.props,
-	        _onClick = _props.onClick,
-	        rest = (0, _objectWithoutProperties3.default)(_props, ["onClick"]);
-	
-	    var El = void 0;
-	    if ((0, _keys2.default)(NavLinkPropTypes).some(function (propName) {
-	      return _this3.props[propName];
-	    })) {
-	      El = _reactRouterDom.NavLink;
-	    } else {
-	      El = _reactRouterDom.Link;
-	    }
-	
-	    return _react2.default.createElement(El, (0, _extends3.default)({
-	      onClick: function onClick(e) {
-	        // eslint-disable-line
-	        _onClick && _onClick(e);
-	
-	        if (e.button === 0 && // ignore right clicks
-	        !_this3.props.target && // let browser handle "target=_blank"
-	        !e.defaultPrevented && // onClick prevented default
-	        !e.metaKey && // ignore clicks with modifier keys...
-	        !e.altKey && !e.ctrlKey && !e.shiftKey) {
-	          // Is this link pointing to a hash on the same page? If so,
-	          // just scroll there.
-	          var pathname = _this3.state.to;
-	          if (pathname.split("#").length > 1) {
-	            pathname = pathname.split("#").slice(0, -1).join("");
-	          }
-	          if (pathname === window.location.pathname) {
-	            var hashFragment = _this3.state.to.split("#").slice(1).join("#");
-	            var element = document.getElementById(hashFragment);
-	            if (element !== null) {
-	              element.scrollIntoView();
-	              return true;
-	            }
-	          }
-	
-	          // In production, make sure the necessary scripts are
-	          // loaded before continuing.
-	          if (true) {
-	            e.preventDefault();
-	            window.___navigateTo(_this3.state.to);
-	          }
-	        }
-	
-	        return true;
-	      }
-	    }, rest, {
-	      to: this.state.to,
-	      innerRef: this.handleRef
-	    }));
-	  };
-	
-	  return GatsbyLink;
-	}(_react2.default.Component);
-	
-	GatsbyLink.propTypes = (0, _extends3.default)({}, NavLinkPropTypes, {
-	  innerRef: _propTypes2.default.func,
-	  onClick: _propTypes2.default.func,
-	  to: _propTypes2.default.string.isRequired
-	});
-	
-	GatsbyLink.contextTypes = {
-	  router: _propTypes2.default.object
-	};
-	
-	exports.default = GatsbyLink;
-	var navigateTo = exports.navigateTo = function navigateTo(pathname) {
-	  window.___navigateTo(withPrefix(pathname));
-	};
-
-/***/ }),
-
-/***/ 375:
+/***/ 363:
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports.__esModule = true;
@@ -624,7 +239,7 @@ webpackJsonp([22676092666560,60335399758886],{
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _react = __webpack_require__(4);
+	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
@@ -632,17 +247,17 @@ webpackJsonp([22676092666560,60335399758886],{
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _reactSideEffect = __webpack_require__(394);
+	var _reactSideEffect = __webpack_require__(382);
 	
 	var _reactSideEffect2 = _interopRequireDefault(_reactSideEffect);
 	
-	var _deepEqual = __webpack_require__(251);
+	var _deepEqual = __webpack_require__(243);
 	
 	var _deepEqual2 = _interopRequireDefault(_deepEqual);
 	
-	var _HelmetUtils = __webpack_require__(376);
+	var _HelmetUtils = __webpack_require__(364);
 	
-	var _HelmetConstants = __webpack_require__(166);
+	var _HelmetConstants = __webpack_require__(165);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -912,7 +527,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 166:
+/***/ 165:
 /***/ (function(module, exports) {
 
 	exports.__esModule = true;
@@ -982,7 +597,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 376:
+/***/ 364:
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {exports.__esModule = true;
@@ -992,15 +607,15 @@ webpackJsonp([22676092666560,60335399758886],{
 	
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 	
-	var _react = __webpack_require__(4);
+	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _objectAssign = __webpack_require__(5);
+	var _objectAssign = __webpack_require__(4);
 	
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 	
-	var _HelmetConstants = __webpack_require__(166);
+	var _HelmetConstants = __webpack_require__(165);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -1525,20 +1140,20 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 394:
+/***/ 382:
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var _react = __webpack_require__(4);
+	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _exenv = __webpack_require__(260);
+	var _exenv = __webpack_require__(252);
 	
 	var _exenv2 = _interopRequireDefault(_exenv);
 	
-	var _shallowequal = __webpack_require__(398);
+	var _shallowequal = __webpack_require__(386);
 	
 	var _shallowequal2 = _interopRequireDefault(_shallowequal);
 	
@@ -1649,7 +1264,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 398:
+/***/ 386:
 /***/ (function(module, exports) {
 
 	module.exports = function shallowEqual(objA, objB, compare, compareContext) {
@@ -1706,36 +1321,46 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 261:
-/***/ (function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 177:
+/***/ 60:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const React = __webpack_require__(4);
-	const gatsby_link_1 = __webpack_require__(274);
-	__webpack_require__(261);
-	const react_helmet_1 = __webpack_require__(375);
-	const headerStyle = {
-	    padding: "3rem 0"
+	const React = __webpack_require__(5);
+	const Spacer = function ({ children, height = 1 }) {
+	    const style = {
+	        marginTop: height * 8
+	    };
+	    return React.createElement("div", { style: style }, children);
 	};
-	const Header = () => React.createElement("div", { style: headerStyle }, React.createElement(gatsby_link_1.default, { to: "/" }, "Pravdomil.com"), "   ", React.createElement(gatsby_link_1.default, { to: "/about" }, "about"));
-	const pageStyle = {
-	    margin: "0 auto",
-	    maxWidth: 960,
-	    padding: "1rem"
-	};
-	const Layout = ({ children }) => React.createElement("div", { style: pageStyle }, React.createElement(react_helmet_1.Helmet, { title: "Pravdomil.com" }), React.createElement(Header, null), React.createElement("div", null, children()));
+	exports.default = Spacer;
+
+/***/ }),
+
+/***/ 178:
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const React = __webpack_require__(5);
+	__webpack_require__(296);
+	const react_helmet_1 = __webpack_require__(363);
+	const Spacer_1 = __webpack_require__(60);
+	const Header = () => React.createElement("header", null, React.createElement("div", null, React.createElement(Spacer_1.default, { height: 9 }), React.createElement("h2", null, "Pravdomil"), React.createElement("p", null, "personal site"), React.createElement(Spacer_1.default, { height: 3 }), React.createElement("div", { className: "links" }, React.createElement("a", { href: "mailto:info@pravdomil.com" }, React.createElement("i", { className: "fa fa-envelope" })), React.createElement("a", { href: "https://twitter.com/pravdomil" }, React.createElement("i", { className: "fa fa-twitter" })), React.createElement("a", { href: "https://github.com/pravdomil" }, React.createElement("i", { className: "fa fa-github" })), React.createElement("a", { href: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BCL2X3AFQBAP2&item_name=donation" }, React.createElement("i", { className: "fa fa-paypal" })), React.createElement("a", { href: "https://youtube.com/pravdomil" }, React.createElement("i", { className: "fa fa-youtube-play" })))));
+	const Layout = ({ children }) => React.createElement("main", null, React.createElement(react_helmet_1.Helmet, { title: "Pravdomil.com" }), React.createElement(Header, null), React.createElement("div", null, children()), React.createElement(Footer, null));
+	const Footer = () => React.createElement("footer", null, React.createElement(Spacer_1.default, { height: 9 }), React.createElement("div", null, React.createElement("div", { className: "links" }, React.createElement("a", { href: "https://github.com/search?q=user%3Apravdomil&s=stars&type=Repositories" }, "Sorted by stars"), React.createElement("a", { href: "https://github.com/pravdomil/pravdomil.com" }, "Source on GitHub"), React.createElement("a", { href: "https://gatsbyjs.org" }, "Made with Gatsby"), React.createElement("br", null), React.createElement("a", { href: "https://travis-ci.org" }, "Build by Travis"), React.createElement("a", { href: "https://cloudflare.com" }, "Cached by CloudFlare"))), React.createElement(Spacer_1.default, { height: 1 }));
 	exports.default = Layout;
+
+/***/ }),
+
+/***/ 296:
+/***/ (function(module, exports) {
+
+	// empty (null-loader)
 
 /***/ })
 
 });
-//# sourceMappingURL=component---src-layouts-index-tsx-106da81f314afb5818a2.js.map
+//# sourceMappingURL=component---src-layouts-index-tsx-fbfcc6fb16adf70831f1.js.map
