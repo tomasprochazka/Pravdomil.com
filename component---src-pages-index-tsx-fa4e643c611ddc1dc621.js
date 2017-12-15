@@ -104,7 +104,7 @@ webpackJsonp([221374088121123],{
 	
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const React = __webpack_require__(5);
-	const helper_1 = __webpack_require__(177);
+	const humanReadable_1 = __webpack_require__(177);
 	const Spacer_1 = __webpack_require__(60);
 	function getTopic(topics, name) {
 	    const found = topics.find(t => t.name === name);
@@ -132,7 +132,7 @@ webpackJsonp([221374088121123],{
 	    topics.forEach(topic => {
 	        topic.repos.sort((a, b) => a.stargazers.totalCount < b.stargazers.totalCount ? 1 : -1);
 	    });
-	    return React.createElement("div", { className: "repos" }, topics.map((topic, i) => React.createElement("div", { key: i }, React.createElement(Spacer_1.default, { height: 6 }), React.createElement("h1", null, helper_1.humanReadable(topic.name)), React.createElement(Spacer_1.default, { height: 2 }), React.createElement("ul", { className: "list" }, topic.repos.map((repo, c) => React.createElement("li", { key: c }, React.createElement("a", { href: repo.url }, React.createElement("span", { className: "title" }, helper_1.humanReadable(repo.name)), React.createElement("span", { className: "desc" }, repo.shortDescriptionHTML))))))));
+	    return React.createElement("div", { className: "repos" }, topics.map((topic, i) => React.createElement("div", { key: i }, React.createElement(Spacer_1.default, { height: 6 }), React.createElement("h1", null, humanReadable_1.humanReadable(topic.name)), React.createElement(Spacer_1.default, { height: 2 }), React.createElement("ul", { className: "list" }, topic.repos.map((repo, c) => React.createElement("li", { key: c }, React.createElement("a", { href: repo.url }, React.createElement("span", { className: "title" }, humanReadable_1.humanReadable(repo.name)), React.createElement("span", { className: "desc" }, repo.shortDescriptionHTML))))))));
 	};
 	exports.default = RepoList;
 
@@ -162,7 +162,7 @@ webpackJsonp([221374088121123],{
 	
 	Object.defineProperty(exports, "__esModule", { value: true });
 	function humanReadable(input) {
-	    const output = input.replace(/-/g, " ");
+	    const output = input.replace("wp-", "").replace(/-/g, " ");
 	    return output[0].toLocaleUpperCase() + output.substr(1);
 	}
 	exports.humanReadable = humanReadable;
@@ -187,4 +187,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-f0140721e5b85ce4863d.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-fa4e643c611ddc1dc621.js.map
