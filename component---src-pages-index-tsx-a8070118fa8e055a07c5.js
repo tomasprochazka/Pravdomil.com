@@ -112,7 +112,7 @@ webpackJsonp([221374088121123],{
 	    if (found) {
 	        return found;
 	    } else {
-	        const stars = name === "uncategorized" ? -1 : name === "deprecated" ? -2 : 0;
+	        const stars = name === "uncategorized" ? -100 : name === "deprecated" ? -200 : 0;
 	        const topic = { name, repos: [], stars };
 	        topics.push(topic);
 	        return topic;
@@ -125,7 +125,7 @@ webpackJsonp([221374088121123],{
 	        const topic = getTopic(accumulator, name);
 	        topic.stars += repo.stargazers.totalCount;
 	        if (repo.viewerHasStarred) {
-	            topic.stars += 99;
+	            topic.stars += 100;
 	        }
 	        topic.repos.push(repo);
 	        return accumulator;
@@ -134,7 +134,7 @@ webpackJsonp([221374088121123],{
 	    topics.forEach(topic => {
 	        topic.repos.sort((a, b) => a.stargazers.totalCount < b.stargazers.totalCount ? 1 : -1);
 	    });
-	    return React.createElement("div", { className: "repos" }, topics.map((topic, i) => React.createElement("div", { key: i, id: topic.name }, React.createElement(Spacer_1.default, { height: 6 }), React.createElement("h1", null, humanReadable_1.humanReadable(topic.name)), React.createElement(Spacer_1.default, { height: 2 }), React.createElement("ul", { className: "list" }, topic.repos.map((repo, c) => React.createElement("li", { key: c }, React.createElement("a", { href: repo.url, target: "_blank" }, React.createElement("span", { className: "title" }, humanReadable_1.humanReadable(repo.name)), React.createElement("span", { className: "desc" }, repo.shortDescriptionHTML))))))));
+	    return React.createElement("div", { className: "repos" }, topics.map((topic, i) => React.createElement("div", { key: i, id: topic.name }, React.createElement(Spacer_1.default, { height: 6 }), React.createElement("h1", null, humanReadable_1.humanReadable(topic.name)), React.createElement(Spacer_1.default, { height: 2 }), React.createElement("ul", { className: "list" }, topic.repos.map((repo, c) => React.createElement("li", { key: c }, React.createElement("a", { href: repo.url + "#readme", target: "_blank" }, React.createElement("span", { className: "title" }, humanReadable_1.humanReadable(repo.name)), React.createElement(Spacer_1.default, { height: .5 }), React.createElement("span", { className: "desc" }, repo.description))))))));
 	};
 	exports.default = RepoList;
 
@@ -165,224 +165,224 @@ webpackJsonp([221374088121123],{
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.additionalRepos = [{
 	    name: "Services",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://services.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "Whetstone",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://whetstone.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [{ topic: { name: "software" } }] }
 	}, {
 	    name: "Nodepad",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://nodepad.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [{ topic: { name: "software" } }] }
 	}, {
 	    name: "Pravdomil Piano",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://piano.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [{ topic: { name: "design" } }] }
 	}, {
 	    name: "Přijímačky UMPRUM",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://prijimackyumprum.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [{ topic: { name: "czech" } }] }
 	}, {
 	    name: "halftone-workshop",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://halftone-workshop.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [{ topic: { name: "workshop" } }] }
 	}, {
 	    name: "cmyk-workshop",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://cmyk-workshop.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [{ topic: { name: "workshop" } }] }
 	}, {
 	    name: "prawood",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://prawood.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "photography",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://www.icloud.com/sharedalbum/#B0P5oqs3qkAGn;30709E02-4714-4CEA-B4DE-17C88DB668FC",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "graphics-design",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://graphic.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "web-development",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://web.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "3d-print",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://3dprint.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "sound",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://sound.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "Viewfinder",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://viewfinder.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [{ topic: { name: "mobile-apps" } }] }
 	}, {
 	    name: "nodragreleasedelay",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://nodragreleasedelay.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "jailbreak",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://jailbreak.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "programming",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://programming.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "wordpress",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://wordpress.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "magiclantern",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://magiclantern.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "learn",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://learn.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "yearprogress",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://yearprogress.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "newton-law",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://newton-law.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "bookletflow",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://bookletflow.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "fusion",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://fusion.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "cheatsheet",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://cheatsheet.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "electronic",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://electronic.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "papercut",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://papercut.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "pravidla-typografie",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://pravidla-typografie.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "heroes3rady",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://heroes3rady.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "pravidla-grafiky",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://pravidla-grafiky.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "mackeyboardpiano",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://mackeyboardpiano.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "macos",
-	    shortDescriptionHTML: "",
+	    description: "",
 	    url: "https://macos.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
@@ -423,4 +423,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-4807d991ff2f18484c24.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-a8070118fa8e055a07c5.js.map
