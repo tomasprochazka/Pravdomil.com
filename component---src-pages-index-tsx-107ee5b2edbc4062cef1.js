@@ -122,6 +122,9 @@ webpackJsonp([221374088121123],{
 	    const topics = repos.concat(additionalRepos_1.additionalRepos).reduce((accumulator, repo) => {
 	        const topicCount = repo.repositoryTopics.nodes.length;
 	        const name = topicCount ? repo.repositoryTopics.nodes[0].topic.name : "uncategorized";
+	        if (name === "wordpress") {
+	            return accumulator;
+	        } // TODO add wordpress
 	        const topic = getTopic(accumulator, name);
 	        topic.stars += repo.stargazers.totalCount;
 	        if (repo.viewerHasStarred) {
@@ -172,46 +175,32 @@ webpackJsonp([221374088121123],{
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "Whetstone",
-	    description: "",
+	    description: "Image processing application for macOS",
 	    url: "https://whetstone.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [{ topic: { name: "software" } }] }
 	}, {
 	    name: "Nodepad",
-	    description: "",
+	    description: "Another developer tool",
 	    url: "https://nodepad.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [{ topic: { name: "software" } }] }
 	}, {
 	    name: "Pravdomil Piano",
-	    description: "",
+	    description: "My piano in development",
 	    url: "https://piano.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [{ topic: { name: "design" } }] }
 	}, {
 	    name: "Přijímačky UMPRUM",
-	    description: "",
+	    description: "Má první kniha",
 	    url: "https://prijimackyumprum.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [{ topic: { name: "czech" } }] }
-	}, {
-	    name: "halftone-workshop",
-	    description: "",
-	    url: "https://halftone-workshop.pravdomil.com",
-	    viewerHasStarred: false,
-	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [{ topic: { name: "workshop" } }] }
-	}, {
-	    name: "cmyk-workshop",
-	    description: "",
-	    url: "https://cmyk-workshop.pravdomil.com",
-	    viewerHasStarred: false,
-	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [{ topic: { name: "workshop" } }] }
 	}, {
 	    name: "prawood",
 	    description: "",
@@ -254,13 +243,6 @@ webpackJsonp([221374088121123],{
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
-	}, {
-	    name: "Viewfinder",
-	    description: "",
-	    url: "https://viewfinder.pravdomil.com",
-	    viewerHasStarred: false,
-	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [{ topic: { name: "mobile-apps" } }] }
 	}, {
 	    name: "nodragreleasedelay",
 	    description: "",
@@ -375,11 +357,11 @@ webpackJsonp([221374088121123],{
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "mackeyboardpiano",
-	    description: "",
+	    description: "Use your Mac keyboard as piano keys",
 	    url: "https://mackeyboardpiano.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [] }
+	    repositoryTopics: { nodes: [{ topic: { name: "software" } }] }
 	}, {
 	    name: "macos",
 	    description: "",
@@ -423,4 +405,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-a8070118fa8e055a07c5.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-107ee5b2edbc4062cef1.js.map
