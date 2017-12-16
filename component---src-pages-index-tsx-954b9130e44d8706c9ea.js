@@ -176,12 +176,12 @@ webpackJsonp([221374088121123],{
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "Whetstone",
-	    description: "Image processing application for macOS",
+	    description: "Image processing application for macOS with no UI",
 	    url: "",
 	    homepageUrl: "https://whetstone.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [{ topic: { name: "software" } }] }
+	    repositoryTopics: { nodes: [{ topic: { name: "applications" } }] }
 	}, {
 	    name: "Nodepad",
 	    description: "Another developer tool",
@@ -189,7 +189,31 @@ webpackJsonp([221374088121123],{
 	    homepageUrl: "https://nodepad.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [{ topic: { name: "software" } }] }
+	    repositoryTopics: { nodes: [{ topic: { name: "applications" } }] }
+	}, {
+	    name: "papercut",
+	    description: "Video editor concept",
+	    url: "",
+	    homepageUrl: "https://papercut.pravdomil.com",
+	    viewerHasStarred: false,
+	    stargazers: { totalCount: 0 },
+	    repositoryTopics: { nodes: [{ topic: { name: "applications" } }] }
+	}, {
+	    name: "mackeyboardpiano",
+	    description: "Use your Mac keyboard as piano keys",
+	    url: "",
+	    homepageUrl: "https://mackeyboardpiano.pravdomil.com",
+	    viewerHasStarred: false,
+	    stargazers: { totalCount: 0 },
+	    repositoryTopics: { nodes: [{ topic: { name: "applications" } }] }
+	}, {
+	    name: "yearprogress",
+	    description: "Progress bar you'd rather see go slower",
+	    url: "",
+	    homepageUrl: "https://yearprogress.pravdomil.com",
+	    viewerHasStarred: false,
+	    stargazers: { totalCount: 0 },
+	    repositoryTopics: { nodes: [{ topic: { name: "applications" } }] }
 	}, {
 	    name: "Pravdomil Piano",
 	    description: "My piano in development",
@@ -255,22 +279,6 @@ webpackJsonp([221374088121123],{
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
-	    name: "nodragreleasedelay",
-	    description: "",
-	    url: "",
-	    homepageUrl: "https://nodragreleasedelay.pravdomil.com",
-	    viewerHasStarred: false,
-	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [] }
-	}, {
-	    name: "jailbreak",
-	    description: "",
-	    url: "",
-	    homepageUrl: "https://jailbreak.pravdomil.com",
-	    viewerHasStarred: false,
-	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [] }
-	}, {
 	    name: "programming",
 	    description: "",
 	    url: "",
@@ -303,14 +311,6 @@ webpackJsonp([221374088121123],{
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
-	    name: "yearprogress",
-	    description: "",
-	    url: "",
-	    homepageUrl: "https://yearprogress.pravdomil.com",
-	    viewerHasStarred: false,
-	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [] }
-	}, {
 	    name: "newton-law",
 	    description: "",
 	    url: "",
@@ -323,14 +323,6 @@ webpackJsonp([221374088121123],{
 	    description: "",
 	    url: "",
 	    homepageUrl: "https://bookletflow.pravdomil.com",
-	    viewerHasStarred: false,
-	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [] }
-	}, {
-	    name: "fusion",
-	    description: "",
-	    url: "",
-	    homepageUrl: "https://fusion.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
@@ -351,45 +343,29 @@ webpackJsonp([221374088121123],{
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
-	    name: "papercut",
-	    description: "",
-	    url: "",
-	    homepageUrl: "https://papercut.pravdomil.com",
-	    viewerHasStarred: false,
-	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [] }
-	}, {
 	    name: "pravidla-typografie",
-	    description: "",
+	    description: "Doporučené typografické minimum",
 	    url: "",
 	    homepageUrl: "https://pravidla-typografie.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [] }
+	    repositoryTopics: { nodes: [{ topic: { name: "czech" } }] }
 	}, {
 	    name: "heroes3rady",
-	    description: "",
+	    description: "Aneb co jsem slyšel v putice",
 	    url: "",
 	    homepageUrl: "https://heroes3rady.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [] }
+	    repositoryTopics: { nodes: [{ topic: { name: "czech" } }] }
 	}, {
 	    name: "pravidla-grafiky",
-	    description: "",
+	    description: "Shrnutí základů grafického designu",
 	    url: "",
 	    homepageUrl: "https://pravidla-grafiky.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [] }
-	}, {
-	    name: "mackeyboardpiano",
-	    description: "Use your Mac keyboard as piano keys",
-	    url: "",
-	    homepageUrl: "https://mackeyboardpiano.pravdomil.com",
-	    viewerHasStarred: false,
-	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [{ topic: { name: "software" } }] }
+	    repositoryTopics: { nodes: [{ topic: { name: "czech" } }] }
 	}, {
 	    name: "macos",
 	    description: "",
@@ -434,4 +410,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-118f8e03cadb9ca17dcf.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-954b9130e44d8706c9ea.js.map
