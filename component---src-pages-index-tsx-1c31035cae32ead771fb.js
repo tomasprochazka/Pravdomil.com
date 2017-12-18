@@ -137,7 +137,7 @@ webpackJsonp([221374088121123],{
 	    topics.forEach(topic => {
 	        topic.repos.sort((a, b) => a.stargazers.totalCount < b.stargazers.totalCount ? 1 : -1);
 	    });
-	    return React.createElement("div", { className: "repos" }, topics.map((topic, i) => React.createElement("div", { key: i, id: topic.name }, React.createElement(Spacer_1.default, { height: 6 }), React.createElement("h1", null, humanReadable_1.humanReadable(topic.name)), React.createElement(Spacer_1.default, { height: 2 }), React.createElement("ul", { className: "list" }, topic.repos.map((repo, c) => React.createElement("li", { key: c }, React.createElement("a", { href: repo.homepageUrl && !repo.homepageUrl.includes("://pravdomil.com") ? repo.homepageUrl : repo.url + "#readme", target: "_blank" }, React.createElement("span", { className: "title" }, humanReadable_1.humanReadable(repo.name)), React.createElement(Spacer_1.default, { height: .5 }), React.createElement("span", { className: "desc" }, repo.description))))))));
+	    return React.createElement("div", { className: "repos" }, topics.map((topic, i) => React.createElement("div", { key: i, id: topic.name }, React.createElement(Spacer_1.default, { height: 6 }), React.createElement("h1", null, humanReadable_1.humanReadable(topic.name)), React.createElement(Spacer_1.default, { height: 2 }), React.createElement("ul", null, topic.repos.map((repo, c) => React.createElement("li", { key: c }, React.createElement("a", { href: repo.homepageUrl && !repo.homepageUrl.includes("://pravdomil.com") ? repo.homepageUrl : repo.url + "#readme", target: "_blank" }, React.createElement("span", { className: "title" }, humanReadable_1.humanReadable(repo.name)), React.createElement(Spacer_1.default, { height: .5 }), React.createElement("span", { className: "desc" }, repo.description))))))));
 	};
 	exports.default = RepoList;
 
@@ -401,6 +401,9 @@ webpackJsonp([221374088121123],{
 	const React = __webpack_require__(5);
 	const RepoList_1 = __webpack_require__(176);
 	const IndexPage = function ({ data }) {
+	    if (!data.githubData) {
+	        throw new Error("No data from GitHub");
+	    }
 	    const repos = data.githubData.data.viewer.repositories.nodes;
 	    return React.createElement("div", null, React.createElement(RepoList_1.default, { repos: repos }));
 	};
@@ -410,4 +413,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-a56d63b40540cc2d8534.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-1c31035cae32ead771fb.js.map

@@ -229,7 +229,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 364:
+/***/ 365:
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports.__esModule = true;
@@ -247,7 +247,7 @@ webpackJsonp([22676092666560,60335399758886],{
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _reactSideEffect = __webpack_require__(383);
+	var _reactSideEffect = __webpack_require__(384);
 	
 	var _reactSideEffect2 = _interopRequireDefault(_reactSideEffect);
 	
@@ -255,7 +255,7 @@ webpackJsonp([22676092666560,60335399758886],{
 	
 	var _deepEqual2 = _interopRequireDefault(_deepEqual);
 	
-	var _HelmetUtils = __webpack_require__(365);
+	var _HelmetUtils = __webpack_require__(366);
 	
 	var _HelmetConstants = __webpack_require__(165);
 	
@@ -597,7 +597,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 365:
+/***/ 366:
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {exports.__esModule = true;
@@ -1140,7 +1140,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 383:
+/***/ 384:
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1153,7 +1153,7 @@ webpackJsonp([22676092666560,60335399758886],{
 	
 	var _exenv2 = _interopRequireDefault(_exenv);
 	
-	var _shallowequal = __webpack_require__(387);
+	var _shallowequal = __webpack_require__(388);
 	
 	var _shallowequal2 = _interopRequireDefault(_shallowequal);
 	
@@ -1264,7 +1264,14 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 387:
+/***/ 266:
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "326c1b82ea4ee04827d9276347a04249.js";
+
+/***/ }),
+
+/***/ 388:
 /***/ (function(module, exports) {
 
 	module.exports = function shallowEqual(objA, objB, compare, compareContext) {
@@ -1345,17 +1352,17 @@ webpackJsonp([22676092666560,60335399758886],{
 	
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const React = __webpack_require__(5);
-	__webpack_require__(297);
-	const react_helmet_1 = __webpack_require__(364);
+	__webpack_require__(298);
+	const react_helmet_1 = __webpack_require__(365);
 	const Spacer_1 = __webpack_require__(60);
 	const Header = () => React.createElement("header", null, React.createElement("div", null, React.createElement(Spacer_1.default, { height: 9 }), React.createElement("h2", null, "Pravdomil"), React.createElement("p", null, "personal site"), React.createElement(Spacer_1.default, { height: 3 }), React.createElement("div", { className: "links" }, React.createElement("a", { href: "mailto:info@pravdomil.com" }, React.createElement("i", { className: "fa fa-envelope" })), React.createElement("a", { href: "https://twitter.com/pravdomil" }, React.createElement("i", { className: "fa fa-twitter" })), React.createElement("a", { href: "https://github.com/pravdomil" }, React.createElement("i", { className: "fa fa-github" })), React.createElement("a", { href: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BCL2X3AFQBAP2&item_name=donation" }, React.createElement("i", { className: "fa fa-paypal" })), React.createElement("a", { href: "https://youtube.com/pravdomil" }, React.createElement("i", { className: "fa fa-youtube-play" })))));
-	const Layout = ({ children }) => React.createElement("main", null, React.createElement(react_helmet_1.Helmet, { title: "Pravdomil.com" }), React.createElement(Header, null), React.createElement("div", null, children()), React.createElement(Footer, null));
+	const Layout = ({ children }) => React.createElement("main", null, React.createElement(react_helmet_1.Helmet, { title: "Pravdomil.com" }), React.createElement(react_helmet_1.Helmet, { meta: [{ name: "viewport", content: "width=device-width" }] }), React.createElement(react_helmet_1.Helmet, { script: [{ src: __webpack_require__(266) }] }), React.createElement(Header, null), React.createElement("div", null, children()), React.createElement(Footer, null));
 	const Footer = () => React.createElement("footer", null, React.createElement(Spacer_1.default, { height: 16 }), React.createElement("div", null, React.createElement("div", { className: "links" }, React.createElement("a", { href: "https://github.com/search?q=user%3Apravdomil&s=stars&type=Repositories" }, "Sorted by stars"), React.createElement("a", { href: "https://github.com/pravdomil/pravdomil.com" }, "Source on GitHub"), React.createElement("br", null), React.createElement("a", { href: "https://gatsbyjs.org" }, "Made with Gatsby"), React.createElement("a", { href: "https://travis-ci.org" }, "Build by Travis"), React.createElement("a", { href: "https://cloudflare.com" }, "Cached by CloudFlare"))), React.createElement(Spacer_1.default, { height: 1 }));
 	exports.default = Layout;
 
 /***/ }),
 
-/***/ 297:
+/***/ 298:
 /***/ (function(module, exports) {
 
 	// empty (null-loader)
@@ -1363,4 +1370,4 @@ webpackJsonp([22676092666560,60335399758886],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-layouts-index-tsx-f87179563aa7a99401cf.js.map
+//# sourceMappingURL=component---src-layouts-index-tsx-43805ac20c0874d9a239.js.map
