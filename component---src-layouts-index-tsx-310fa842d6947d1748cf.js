@@ -1337,7 +1337,7 @@ webpackJsonp([22676092666560,60335399758886],{
 	const React = __webpack_require__(5);
 	const Spacer = function ({ children, height = 1 }) {
 	    const style = {
-	        marginTop: height * 8
+	        height: height * 8
 	    };
 	    return React.createElement("div", { style: style }, children);
 	};
@@ -1370,4 +1370,4 @@ webpackJsonp([22676092666560,60335399758886],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-layouts-index-tsx-43805ac20c0874d9a239.js.map
+//# sourceMappingURL=component---src-layouts-index-tsx-310fa842d6947d1748cf.js.map
