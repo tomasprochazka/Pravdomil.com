@@ -274,7 +274,7 @@ webpackJsonp([221374088121123],{
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [{ topic: { name: "art" } }] }
 	}, {
-	    name: "magiclantern",
+	    name: "MagicLantern",
 	    description: "",
 	    url: "",
 	    homepageUrl: "https://magiclantern.pravdomil.com",
@@ -376,4 +376,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-edf8f0c4e43cc3ab0ae9.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-01f7c2eb73b545117ea8.js.map
