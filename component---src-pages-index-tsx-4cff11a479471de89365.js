@@ -259,7 +259,7 @@ webpackJsonp([221374088121123],{
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "3D-print",
-	    description: "Sharing my 3D printed plastic experiences",
+	    description: "My experiences with 3D printing",
 	    url: "",
 	    homepageUrl: "https://3dprint.pravdomil.com",
 	    viewerHasStarred: false,
@@ -384,4 +384,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-2f8919f3f12fb18afc5d.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-4cff11a479471de89365.js.map
