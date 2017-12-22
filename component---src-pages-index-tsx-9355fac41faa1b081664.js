@@ -207,14 +207,6 @@ webpackJsonp([221374088121123],{
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [{ topic: { name: "applications" } }] }
 	}, {
-	    name: "yearprogress",
-	    description: "Progress bar you'd rather see go slower",
-	    url: "",
-	    homepageUrl: "https://yearprogress.pravdomil.com",
-	    viewerHasStarred: false,
-	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [{ topic: { name: "applications" } }] }
-	}, {
 	    name: "Pravdomil Piano",
 	    description: "My piano in development",
 	    url: "",
@@ -413,4 +405,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-24b987e073e26cb2d675.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-9355fac41faa1b081664.js.map
