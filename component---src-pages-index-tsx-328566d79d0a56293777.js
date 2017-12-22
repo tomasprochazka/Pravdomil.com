@@ -290,14 +290,6 @@ webpackJsonp([221374088121123],{
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
-	    name: "pravidla-typografie",
-	    description: "Doporučené typografické minimum",
-	    url: "",
-	    homepageUrl: "https://pravidla-typografie.pravdomil.com",
-	    viewerHasStarred: false,
-	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [{ topic: { name: "czech" } }] }
-	}, {
 	    name: "heroes-3-rady",
 	    description: "Aneb co jsem slyšel v putice",
 	    url: "",
@@ -344,4 +336,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-8f06ba18746d12e342a7.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-328566d79d0a56293777.js.map
