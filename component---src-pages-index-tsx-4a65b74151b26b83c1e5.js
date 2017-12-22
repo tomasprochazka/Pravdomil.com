@@ -199,7 +199,7 @@ webpackJsonp([221374088121123],{
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [{ topic: { name: "applications" } }] }
 	}, {
-	    name: "mackeyboardpiano",
+	    name: "Mac-Keyboard-Piano",
 	    description: "Use your Mac keyboard as piano keys",
 	    url: "",
 	    homepageUrl: "https://mackeyboardpiano.pravdomil.com",
@@ -397,4 +397,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-29c473ea906438d037c8.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-4a65b74151b26b83c1e5.js.map
