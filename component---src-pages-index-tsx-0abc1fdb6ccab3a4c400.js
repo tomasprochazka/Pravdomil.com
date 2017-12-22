@@ -274,14 +274,6 @@ webpackJsonp([221374088121123],{
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [{ topic: { name: "art" } }] }
 	}, {
-	    name: "programming tips",
-	    description: "",
-	    url: "",
-	    homepageUrl: "https://programming.pravdomil.com",
-	    viewerHasStarred: false,
-	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [{ topic: { name: "development" } }] }
-	}, {
 	    name: "magiclantern",
 	    description: "",
 	    url: "",
@@ -400,4 +392,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-69a4c4acde286c62265d.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-0abc1fdb6ccab3a4c400.js.map
