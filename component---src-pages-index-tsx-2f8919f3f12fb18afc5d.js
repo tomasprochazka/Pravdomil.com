@@ -314,14 +314,6 @@ webpackJsonp([221374088121123],{
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
-	    name: "electronic",
-	    description: "",
-	    url: "",
-	    homepageUrl: "https://electronic.pravdomil.com",
-	    viewerHasStarred: false,
-	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [] }
-	}, {
 	    name: "pravidla-typografie",
 	    description: "Doporučené typografické minimum",
 	    url: "",
@@ -392,4 +384,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-aecc33b810db9ea29a01.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-2f8919f3f12fb18afc5d.js.map
