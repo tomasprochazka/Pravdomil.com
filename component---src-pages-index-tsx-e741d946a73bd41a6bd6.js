@@ -124,7 +124,10 @@ webpackJsonp([221374088121123],{
 	        const name = topicCount ? repo.repositoryTopics.nodes[0].topic.name : "uncategorized";
 	        if (name === "wordpress") {
 	            return accumulator;
-	        } // TODO add wordpress
+	        }
+	        if (name === "submodule") {
+	            return accumulator;
+	        }
 	        const topic = getTopic(accumulator, name);
 	        topic.stars += repo.stargazers.totalCount;
 	        if (repo.viewerHasStarred) {
@@ -397,4 +400,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-4a65b74151b26b83c1e5.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-e741d946a73bd41a6bd6.js.map
