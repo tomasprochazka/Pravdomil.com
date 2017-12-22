@@ -125,7 +125,7 @@ webpackJsonp([221374088121123],{
 	        if (name === "wordpress") {
 	            return accumulator;
 	        }
-	        if (name === "submodule") {
+	        if (name === "dependency") {
 	            return accumulator;
 	        }
 	        const topic = getTopic(accumulator, name);
@@ -400,4 +400,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-e741d946a73bd41a6bd6.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-69a4c4acde286c62265d.js.map
