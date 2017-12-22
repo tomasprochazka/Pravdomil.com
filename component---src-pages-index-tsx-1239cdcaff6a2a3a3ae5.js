@@ -330,7 +330,7 @@ webpackJsonp([221374088121123],{
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [{ topic: { name: "czech" } }] }
 	}, {
-	    name: "heroes3rady",
+	    name: "heroes-3-rady",
 	    description: "Aneb co jsem slyšel v putice",
 	    url: "",
 	    homepageUrl: "https://heroes3rady.pravdomil.com",
@@ -392,4 +392,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-a424d6afcec7dc88084e.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-1239cdcaff6a2a3a3ae5.js.map
