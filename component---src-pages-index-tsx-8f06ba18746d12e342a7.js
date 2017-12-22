@@ -305,14 +305,6 @@ webpackJsonp([221374088121123],{
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [{ topic: { name: "czech" } }] }
-	}, {
-	    name: "pravidla-grafiky",
-	    description: "Shrnutí základů grafického designu",
-	    url: "",
-	    homepageUrl: "https://pravidla-grafiky.pravdomil.com",
-	    viewerHasStarred: false,
-	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [{ topic: { name: "czech" } }] }
 	}];
 
 /***/ }),
@@ -352,4 +344,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-0fcae11c41c33fe035be.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-8f06ba18746d12e342a7.js.map
