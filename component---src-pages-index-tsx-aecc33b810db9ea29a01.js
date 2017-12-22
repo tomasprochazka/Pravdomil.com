@@ -227,7 +227,7 @@ webpackJsonp([221374088121123],{
 	    repositoryTopics: { nodes: [{ topic: { name: "czech" } }] }
 	}, {
 	    name: "prawood",
-	    description: "",
+	    description: "DIY wooden furniture",
 	    url: "",
 	    homepageUrl: "https://prawood.pravdomil.com",
 	    viewerHasStarred: false,
@@ -235,7 +235,7 @@ webpackJsonp([221374088121123],{
 	    repositoryTopics: { nodes: [{ topic: { name: "art" } }] }
 	}, {
 	    name: "photography",
-	    description: "",
+	    description: "Nice photos",
 	    url: "",
 	    homepageUrl: "https://www.icloud.com/sharedalbum/#B0P5oqs3qkAGn;30709E02-4714-4CEA-B4DE-17C88DB668FC",
 	    viewerHasStarred: false,
@@ -243,7 +243,7 @@ webpackJsonp([221374088121123],{
 	    repositoryTopics: { nodes: [{ topic: { name: "art" } }] }
 	}, {
 	    name: "graphics-design",
-	    description: "",
+	    description: "Posters, logos, brand identity I have created",
 	    url: "",
 	    homepageUrl: "https://graphic.pravdomil.com",
 	    viewerHasStarred: false,
@@ -259,7 +259,7 @@ webpackJsonp([221374088121123],{
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "3D-print",
-	    description: "",
+	    description: "Sharing my 3D printed plastic experiences",
 	    url: "",
 	    homepageUrl: "https://3dprint.pravdomil.com",
 	    viewerHasStarred: false,
@@ -267,7 +267,7 @@ webpackJsonp([221374088121123],{
 	    repositoryTopics: { nodes: [{ topic: { name: "art" } }] }
 	}, {
 	    name: "sound",
-	    description: "",
+	    description: "My sound experiments",
 	    url: "",
 	    homepageUrl: "https://sound.pravdomil.com",
 	    viewerHasStarred: false,
@@ -392,4 +392,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-1239cdcaff6a2a3a3ae5.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-aecc33b810db9ea29a01.js.map
