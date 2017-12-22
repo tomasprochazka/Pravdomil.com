@@ -171,7 +171,7 @@ webpackJsonp([221374088121123],{
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.additionalRepos = [{
 	    name: "Services",
-	    description: "",
+	    description: "That's what I do for living",
 	    url: "",
 	    homepageUrl: "https://services.pravdomil.com",
 	    viewerHasStarred: false,
@@ -251,7 +251,7 @@ webpackJsonp([221374088121123],{
 	    repositoryTopics: { nodes: [{ topic: { name: "art" } }] }
 	}, {
 	    name: "web-development",
-	    description: "",
+	    description: "That's what I used to do for living",
 	    url: "",
 	    homepageUrl: "https://web.pravdomil.com",
 	    viewerHasStarred: false,
@@ -376,4 +376,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-4cc15f467f1a64dc1be0.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-edf8f0c4e43cc3ab0ae9.js.map
