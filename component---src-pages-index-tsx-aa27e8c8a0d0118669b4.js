@@ -275,7 +275,7 @@ webpackJsonp([221374088121123],{
 	    repositoryTopics: { nodes: [{ topic: { name: "art" } }] }
 	}, {
 	    name: "MagicLantern",
-	    description: "",
+	    description: "Hacks for Canon cameras",
 	    url: "",
 	    homepageUrl: "https://magiclantern.pravdomil.com",
 	    viewerHasStarred: false,
@@ -376,4 +376,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-01f7c2eb73b545117ea8.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-aa27e8c8a0d0118669b4.js.map
