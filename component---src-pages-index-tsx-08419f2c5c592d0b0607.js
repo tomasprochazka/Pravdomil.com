@@ -321,14 +321,6 @@ webpackJsonp([221374088121123],{
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [{ topic: { name: "czech" } }] }
-	}, {
-	    name: "macos",
-	    description: "",
-	    url: "",
-	    homepageUrl: "https://macos.pravdomil.com",
-	    viewerHasStarred: false,
-	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [] }
 	}];
 
 /***/ }),
@@ -368,4 +360,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-a8792f208a655aa3cb13.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-08419f2c5c592d0b0607.js.map
