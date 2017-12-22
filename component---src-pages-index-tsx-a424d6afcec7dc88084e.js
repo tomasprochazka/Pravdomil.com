@@ -258,7 +258,7 @@ webpackJsonp([221374088121123],{
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
-	    name: "3d-print",
+	    name: "3D-print",
 	    description: "",
 	    url: "",
 	    homepageUrl: "https://3dprint.pravdomil.com",
@@ -392,4 +392,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-0abc1fdb6ccab3a4c400.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-a424d6afcec7dc88084e.js.map
