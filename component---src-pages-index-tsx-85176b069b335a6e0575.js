@@ -112,7 +112,7 @@ webpackJsonp([221374088121123],{
 	    if (found) {
 	        return found;
 	    } else {
-	        const stars = name === "uncategorized" ? -100 : name === "deprecated" ? -200 : 0;
+	        const stars = name === "uncategorized" ? -100 : 0;
 	        const topic = { name, repos: [], stars };
 	        topics.push(topic);
 	        return topic;
@@ -328,4 +328,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-89c9ba9f11b48f8642bc.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-85176b069b335a6e0575.js.map
