@@ -283,17 +283,9 @@ webpackJsonp([221374088121123],{
 	    repositoryTopics: { nodes: [] }
 	}, {
 	    name: "newton-law",
-	    description: "",
+	    description: "Newton’s law experiments",
 	    url: "",
 	    homepageUrl: "https://newton-law.pravdomil.com",
-	    viewerHasStarred: false,
-	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [] }
-	}, {
-	    name: "bookletflow",
-	    description: "",
-	    url: "",
-	    homepageUrl: "https://bookletflow.pravdomil.com",
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
@@ -376,4 +368,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-aa27e8c8a0d0118669b4.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-a8792f208a655aa3cb13.js.map
