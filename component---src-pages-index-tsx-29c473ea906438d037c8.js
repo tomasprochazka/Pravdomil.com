@@ -279,14 +279,6 @@ webpackJsonp([221374088121123],{
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [{ topic: { name: "development" } }] }
 	}, {
-	    name: "wordpress",
-	    description: "",
-	    url: "",
-	    homepageUrl: "https://wordpress.pravdomil.com",
-	    viewerHasStarred: false,
-	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [{ topic: { name: "development" } }] }
-	}, {
 	    name: "magiclantern",
 	    description: "",
 	    url: "",
@@ -405,4 +397,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-9355fac41faa1b081664.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-29c473ea906438d037c8.js.map
