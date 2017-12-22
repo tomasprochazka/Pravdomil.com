@@ -290,14 +290,6 @@ webpackJsonp([221374088121123],{
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
-	    name: "cheatsheet",
-	    description: "",
-	    url: "",
-	    homepageUrl: "https://cheatsheet.pravdomil.com",
-	    viewerHasStarred: false,
-	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [] }
-	}, {
 	    name: "pravidla-typografie",
 	    description: "Doporučené typografické minimum",
 	    url: "",
@@ -360,4 +352,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-08419f2c5c592d0b0607.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-0fcae11c41c33fe035be.js.map
