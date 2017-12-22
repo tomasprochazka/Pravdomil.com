@@ -282,14 +282,6 @@ webpackJsonp([221374088121123],{
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
 	}, {
-	    name: "learn",
-	    description: "",
-	    url: "",
-	    homepageUrl: "https://learn.pravdomil.com",
-	    viewerHasStarred: false,
-	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [] }
-	}, {
 	    name: "newton-law",
 	    description: "",
 	    url: "",
@@ -384,4 +376,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-4cff11a479471de89365.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-4cc15f467f1a64dc1be0.js.map
