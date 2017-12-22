@@ -289,14 +289,6 @@ webpackJsonp([221374088121123],{
 	    viewerHasStarred: false,
 	    stargazers: { totalCount: 0 },
 	    repositoryTopics: { nodes: [] }
-	}, {
-	    name: "heroes-3-rady",
-	    description: "Aneb co jsem slyšel v putice",
-	    url: "",
-	    homepageUrl: "https://heroes3rady.pravdomil.com",
-	    viewerHasStarred: false,
-	    stargazers: { totalCount: 0 },
-	    repositoryTopics: { nodes: [{ topic: { name: "czech" } }] }
 	}];
 
 /***/ }),
@@ -336,4 +328,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-328566d79d0a56293777.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-89c9ba9f11b48f8642bc.js.map
