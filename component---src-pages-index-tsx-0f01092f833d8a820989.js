@@ -97,16 +97,16 @@ webpackJsonp([221374088121123],{
 
 /***/ }),
 
-/***/ 176:
+/***/ 177:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const React = __webpack_require__(5);
-	const humanReadable_1 = __webpack_require__(178);
+	const humanReadable_1 = __webpack_require__(179);
 	const Spacer_1 = __webpack_require__(60);
-	const additionalRepos_1 = __webpack_require__(177);
+	const additionalRepos_1 = __webpack_require__(178);
 	function getTopic(topics, name) {
 	    const found = topics.find(t => t.name === name);
 	    if (found) {
@@ -163,7 +163,7 @@ webpackJsonp([221374088121123],{
 
 /***/ }),
 
-/***/ 177:
+/***/ 178:
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -293,7 +293,7 @@ webpackJsonp([221374088121123],{
 
 /***/ }),
 
-/***/ 178:
+/***/ 179:
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -307,14 +307,14 @@ webpackJsonp([221374088121123],{
 
 /***/ }),
 
-/***/ 181:
+/***/ 182:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const React = __webpack_require__(5);
-	const RepoList_1 = __webpack_require__(176);
+	const RepoList_1 = __webpack_require__(177);
 	const IndexPage = function ({ data }) {
 	    if (!data.githubData) {
 	        throw new Error("No data from GitHub");
