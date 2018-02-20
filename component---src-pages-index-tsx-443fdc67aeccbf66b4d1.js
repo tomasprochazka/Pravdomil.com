@@ -300,7 +300,7 @@ webpackJsonp([221374088121123],{
 	
 	Object.defineProperty(exports, "__esModule", { value: true });
 	function humanReadable(input) {
-	    const output = input.replace("wp-", "").replace(/-/g, " ");
+	    const output = input.replace(/^wp-/, "").replace(/-/g, " ");
 	    return output[0].toLocaleUpperCase() + output.substr(1);
 	}
 	exports.humanReadable = humanReadable;
@@ -328,4 +328,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-0f01092f833d8a820989.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-443fdc67aeccbf66b4d1.js.map
