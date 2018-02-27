@@ -119,28 +119,23 @@ webpackJsonp([221374088121123],{
 	    }
 	}
 	const RepoList = function ({ repos }) {
-	    const topics = repos.concat(additionalRepos_1.additionalRepos).reduce((accumulator, repo) => {
-	        const topicCount = repo.repositoryTopics.nodes.length;
-	        const name = topicCount ? repo.repositoryTopics.nodes[0].topic.name : "uncategorized";
-	        if (name === "wordpress") {
-	            return accumulator;
-	        }
-	        if (name === "dependency") {
-	            return accumulator;
-	        }
-	        const topic = getTopic(accumulator, name);
+	    // our main topic collection
+	    const topics = [];
+	    // add repos to corresponding topics
+	    [...repos, ...additionalRepos_1.additionalRepos].forEach(repo => {
+	        const repoTopics = repo.repositoryTopics.nodes;
+	        const topicName = repoTopics.length ? repoTopics[0].topic.name : "uncategorized";
+	        const topic = getTopic(topics, topicName);
 	        topic.stars += repo.stargazers.totalCount;
-	        if (repo.viewerHasStarred) {
-	            topic.stars += 100;
-	        }
 	        topic.repos.push(repo);
-	        return accumulator;
-	    }, []);
-	    topics.sort((a, b) => a.stars < b.stars ? 1 : -1);
+	    });
+	    // sort topic repos by stars
 	    topics.forEach(topic => {
 	        topic.repos.sort((a, b) => a.stargazers.totalCount < b.stargazers.totalCount ? 1 : -1);
 	    });
-	    return React.createElement("div", { className: "repos" }, topics.map((topic, i) => React.createElement("div", { key: i, id: topic.name }, React.createElement(Spacer_1.default, { height: 6 }), React.createElement("h1", null, humanReadable_1.humanReadable(topic.name)), React.createElement(Spacer_1.default, { height: 2 }), React.createElement("ul", null, topic.repos.map((repo, c) => React.createElement("li", { key: c }, React.createElement("a", { href: repo.homepageUrl && !repo.homepageUrl.includes("://pravdomil.com") ? repo.homepageUrl : repo.url + "#readme", target: "_blank" }, React.createElement("span", { className: "title" }, humanReadable_1.humanReadable(repo.name)), React.createElement(Spacer_1.default, { height: .5 }), React.createElement("span", { className: "desc" }, repo.description))))))));
+	    // sort topics by stars sum
+	    topics.sort((a, b) => a.stars < b.stars ? 1 : -1);
+	    return React.createElement("div", { className: "repos" }, topics.map((topic, i) => React.createElement("div", { key: i, id: topic.name }, React.createElement(Spacer_1.default, { height: 6 }), React.createElement("h1", null, humanReadable_1.humanReadable(topic.name)), React.createElement(Spacer_1.default, { height: 2 }), React.createElement("ul", null, topic.repos.map(({ homepageUrl, url, name, description }, c) => React.createElement("li", { key: c }, React.createElement("a", { href: homepageUrl && !homepageUrl.includes("://pravdomil.com") ? homepageUrl : url + "#readme", target: "_blank" }, React.createElement("span", { className: "title" }, humanReadable_1.humanReadable(name)), React.createElement(Spacer_1.default, { height: .5 }), React.createElement("span", { className: "desc" }, description))))))));
 	};
 	exports.default = RepoList;
 
@@ -316,7 +311,7 @@ webpackJsonp([221374088121123],{
 	const React = __webpack_require__(5);
 	const RepoList_1 = __webpack_require__(177);
 	const IndexPage = function ({ data }) {
-	    if (!data.githubData) {
+	    if (!(data && data.githubData)) {
 	        throw new Error("No data from GitHub");
 	    }
 	    const repos = data.githubData.data.viewer.repositories.nodes;
@@ -328,4 +323,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-443fdc67aeccbf66b4d1.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-e4a1cefd6b80c80bbde5.js.map
