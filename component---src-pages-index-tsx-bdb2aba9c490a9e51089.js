@@ -135,7 +135,7 @@ webpackJsonp([221374088121123],{
 	    });
 	    // sort topics by stars sum
 	    topics.sort((a, b) => a.stars < b.stars ? 1 : -1);
-	    return React.createElement("div", { className: "repos" }, topics.map((topic, i) => React.createElement("div", { key: i, id: topic.name }, React.createElement(Spacer_1.default, { height: 6 }), React.createElement("h1", null, humanReadable_1.humanReadable(topic.name)), React.createElement(Spacer_1.default, { height: 2 }), React.createElement("ul", null, topic.repos.map(({ homepageUrl, url, name, description }, c) => React.createElement("li", { key: c }, React.createElement("a", { href: homepageUrl && !homepageUrl.includes("://pravdomil.com") ? homepageUrl : url + "#readme", target: "_blank" }, React.createElement("span", { className: "title" }, humanReadable_1.humanReadable(name)), React.createElement(Spacer_1.default, { height: .5 }), React.createElement("span", { className: "desc" }, description))))))));
+	    return React.createElement("div", { className: "repos" }, topics.map((topic, i) => React.createElement("div", { className: "repo", key: i, id: topic.name }, React.createElement(Spacer_1.default, { height: 6 }), React.createElement("h1", null, humanReadable_1.humanReadable(topic.name)), React.createElement(Spacer_1.default, { height: 2 }), React.createElement("ul", null, topic.repos.map(({ homepageUrl, url, name, description }, c) => React.createElement("li", { key: c }, React.createElement("a", { href: homepageUrl && !homepageUrl.includes("://pravdomil.com") ? homepageUrl : url + "#readme", target: "_blank" }, React.createElement("span", { className: "title" }, humanReadable_1.humanReadable(name)), React.createElement(Spacer_1.default, { height: .5 }), React.createElement("span", { className: "desc" }, description))))))));
 	};
 	exports.default = RepoList;
 
@@ -323,4 +323,4 @@ webpackJsonp([221374088121123],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-pages-index-tsx-e4a1cefd6b80c80bbde5.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-bdb2aba9c490a9e51089.js.map
